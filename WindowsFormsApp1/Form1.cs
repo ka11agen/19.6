@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ namespace WindowsFormsApp1
     public partial class Form1 : Form
     {
         int x;
+        
         public Form1()
         {
             InitializeComponent();
@@ -29,125 +31,155 @@ namespace WindowsFormsApp1
         }
         void Draw_1()
         {
+            SolidBrush brush = new SolidBrush(Color.Blue);
+            brush.Color = Color.Red;
             Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             Graphics graph = Graphics.FromImage(bmp);
             Pen pen = new Pen(Color.Black);
-            graph.DrawLine(pen, 120, 0, 120, 460);//Стенки
-            graph.DrawLine(pen, 720, 0, 720, 460);
-            graph.DrawEllipse(pen, 120, 350, 100, 100);//Мячик
+            graph.FillEllipse(brush, 00, 350, 100, 100);//Мячик
+            graph.DrawEllipse(pen, 00, 350, 100, 100);//Мячик
             pictureBox1.Image = bmp;
             timer1.Start();
             x = 1;
         }
         void Draw_2()
         {
+            SolidBrush brush = new SolidBrush(Color.Blue);
+            brush.Color = Color.Red;
             Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             Graphics graph = Graphics.FromImage(bmp);
             Pen pen = new Pen(Color.Black);
-            graph.DrawLine(pen, 120, 0, 120, 460);//Стенки
-            graph.DrawLine(pen, 720, 0, 720, 460);
-            graph.DrawEllipse(pen, 220, 350, 100, 100);//Мячик
+            graph.DrawEllipse(pen, 100, 350, 100, 100);//Мячик
+            graph.FillEllipse(brush, 100, 350, 100, 100);//Мячик
             pictureBox1.Image = bmp;
             timer2.Start();
             x = 2;
         }
         void Draw_3()
         {
+            SolidBrush brush = new SolidBrush(Color.Blue);
+            brush.Color = Color.Red;
             Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             Graphics graph = Graphics.FromImage(bmp);
             Pen pen = new Pen(Color.Black);
-            graph.DrawLine(pen, 120, 0, 120, 460);//Стенки
-            graph.DrawLine(pen, 720, 0, 720, 460);
-            graph.DrawEllipse(pen, 320, 350, 100, 100);//Мячик
+            graph.DrawEllipse(pen, 200, 350, 100, 100);//Мячик
+            graph.FillEllipse(brush, 200, 350, 100, 100);//Мячик
             pictureBox1.Image = bmp;
             timer3.Start();
             x = 3;
         }
         void Draw_4()
         {
+            SolidBrush brush = new SolidBrush(Color.Blue);
+            brush.Color = Color.Red;
             Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             Graphics graph = Graphics.FromImage(bmp);
             Pen pen = new Pen(Color.Black);
-            graph.DrawLine(pen, 120, 0, 120, 460);//Стенки
-            graph.DrawLine(pen, 720, 0, 720, 460);
-            graph.DrawEllipse(pen, 420, 350, 100, 100);//Мячик
+            graph.DrawEllipse(pen, 300, 350, 100, 100);//Мячик
+            graph.FillEllipse(brush, 300, 350, 100, 100);//Мячик
             pictureBox1.Image = bmp;
             timer4.Start();
             x = 4;
         }
         void Draw_5()
         {
+            SolidBrush brush = new SolidBrush(Color.Blue);
+            brush.Color = Color.Red;
             Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             Graphics graph = Graphics.FromImage(bmp);
             Pen pen = new Pen(Color.Black);
-            graph.DrawLine(pen, 120, 0, 120, 460);//Стенки
-            graph.DrawLine(pen, 720, 0, 720, 460);
-            graph.DrawEllipse(pen, 520, 350, 100, 100);//Мячик
+            graph.DrawEllipse(pen, 400, 350, 100, 100);//Мячик
+            graph.FillEllipse(brush, 400, 350, 100, 100);//Мячик
             pictureBox1.Image = bmp;
             timer5.Start();
             x = 5;
         }
         void Draw_6()
         {
+            SolidBrush brush = new SolidBrush(Color.Blue);
+            brush.Color = Color.Red;
             Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             Graphics graph = Graphics.FromImage(bmp);
             Pen pen = new Pen(Color.Black);
-            graph.DrawLine(pen, 120, 0, 120, 460);//Стенки
-            graph.DrawLine(pen, 720, 0, 720, 460);
-            graph.DrawEllipse(pen, 620, 350, 100, 100);//Мячик
+            graph.DrawEllipse(pen, 500, 350, 100, 100);//Мячик
+            graph.FillEllipse(brush, 500, 350, 100, 100);//Мячик
             pictureBox1.Image = bmp;
             timer6.Start();
             x = 6;
         }
-        void Draw_10()
+        void Draw_7()
         {
+            SolidBrush brush = new SolidBrush(Color.Blue);
+            brush.Color = Color.Red;
             Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             Graphics graph = Graphics.FromImage(bmp);
             Pen pen = new Pen(Color.Black);
-            graph.DrawLine(pen, 120, 0, 120, 460);//Стенки
-            graph.DrawLine(pen, 720, 0, 720, 460);
-            graph.DrawEllipse(pen, 220, 350, 100, 100);//Мячик
+            graph.DrawEllipse(pen, 600, 350, 100, 100);//Мячик
+            graph.FillEllipse(brush, 600, 350, 100, 100);//Мячик
             pictureBox1.Image = bmp;
-            timer10.Start();
-            x = 10;
-        }
-        void Draw_9()
-        {
-            Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
-            Graphics graph = Graphics.FromImage(bmp);
-            Pen pen = new Pen(Color.Black);
-            graph.DrawLine(pen, 120, 0, 120, 460);//Стенки
-            graph.DrawLine(pen, 720, 0, 720, 460);
-            graph.DrawEllipse(pen, 320, 350, 100, 100);//Мячик
-            pictureBox1.Image = bmp;
-            timer9.Start();
-            x = 9;
+            timer7.Start();
         }
         void Draw_8()
         {
+            SolidBrush brush = new SolidBrush(Color.Blue);
+            brush.Color = Color.Red;
             Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             Graphics graph = Graphics.FromImage(bmp);
             Pen pen = new Pen(Color.Black);
-            graph.DrawLine(pen, 120, 0, 120, 460);//Стенки
-            graph.DrawLine(pen, 720, 0, 720, 460);
-            graph.DrawEllipse(pen, 420, 350, 100, 100);//Мячик
+            graph.DrawEllipse(pen, 500, 350, 100, 100);//Мячик
+            graph.FillEllipse(brush, 500, 350, 100, 100);//Мячик
             pictureBox1.Image = bmp;
             timer8.Start();
-            x = 8;
         }
-        void Draw_7()
+        void Draw_9()
         {
+            SolidBrush brush = new SolidBrush(Color.Blue);
+            brush.Color = Color.Red;
             Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             Graphics graph = Graphics.FromImage(bmp);
             Pen pen = new Pen(Color.Black);
-            graph.DrawLine(pen, 120, 0, 120, 460);//Стенки
-            graph.DrawLine(pen, 720, 0, 720, 460);
-            graph.DrawEllipse(pen, 520, 350, 100, 100);//Мячик
+            graph.DrawEllipse(pen, 400, 350, 100, 100);//Мячик
+            graph.FillEllipse(brush, 400, 350, 100, 100);//Мячик
             pictureBox1.Image = bmp;
-            timer7.Start();
-            x = 7;
+            timer9.Start();
         }
-       
+        void Draw_10()
+        {
+            SolidBrush brush = new SolidBrush(Color.Blue);
+            brush.Color = Color.Red;
+            Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            Graphics graph = Graphics.FromImage(bmp);
+            Pen pen = new Pen(Color.Black); 
+            graph.DrawEllipse(pen, 300, 350, 100, 100);//Мячик
+            graph.FillEllipse(brush, 300, 350, 100, 100);//Мячик
+            pictureBox1.Image = bmp;
+            timer10.Start();
+        }
+        void Draw_11()
+        {
+            SolidBrush brush = new SolidBrush(Color.Blue);
+            brush.Color = Color.Red;
+            Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            Graphics graph = Graphics.FromImage(bmp);
+            Pen pen = new Pen(Color.Black);
+            graph.DrawEllipse(pen, 200, 350, 100, 100);//Мячик
+            graph.FillEllipse(brush, 200, 350, 100, 100);//Мячик
+            pictureBox1.Image = bmp;
+            timer11.Start();
+        }
+        void Draw_12()
+        {
+            SolidBrush brush = new SolidBrush(Color.Blue);
+            brush.Color = Color.Red;
+            Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            Graphics graph = Graphics.FromImage(bmp);
+            Pen pen = new Pen(Color.Black);
+            graph.DrawEllipse(pen, 100, 350, 100, 100);//Мячик
+            graph.FillEllipse(brush, 100, 350, 100, 100);//Мячик
+            pictureBox1.Image = bmp;
+            timer12.Start();
+        }
+
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -191,6 +223,8 @@ namespace WindowsFormsApp1
             timer8.Stop();
             timer9.Stop();
             timer10.Stop();
+            timer11.Stop();
+            timer12.Stop();
             Draw_1();
             
         }
@@ -221,7 +255,7 @@ namespace WindowsFormsApp1
 
         private void timer10_Tick(object sender, EventArgs e)
         {
-            Draw_1();
+            Draw_11();
             timer10.Stop();
         }
 
@@ -239,23 +273,27 @@ namespace WindowsFormsApp1
             timer8.Stop();
             timer9.Stop();
             timer10.Stop();
+            timer11.Stop();
+            timer12.Stop();
         }
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
-            switch (x)
-            {
-                case 1: timer1.Start(); break;
-                case 2: timer2.Start(); break;
-                case 3: timer3.Start(); break;
-                case 4: timer4.Start(); break;
-                case 5: timer5.Start(); break;
-                case 6: timer6.Start(); break;
-                case 7: timer7.Start(); break;
-                case 8: timer8.Start(); break;
-                case 9: timer9.Start(); break;
-                case 10: timer10.Start(); break;
-            }  
+
         }
+
+        private void timer11_Tick(object sender, EventArgs e)
+        {
+            Draw_12();
+            timer11.Stop();
+        }
+
+        private void timer12_Tick(object sender, EventArgs e)
+        {
+            Draw_1();
+            timer12.Stop();
+        }
+
+        
     }
 }

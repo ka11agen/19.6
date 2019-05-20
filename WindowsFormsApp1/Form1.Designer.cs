@@ -40,6 +40,8 @@
             this.timer8 = new System.Windows.Forms.Timer(this.components);
             this.timer9 = new System.Windows.Forms.Timer(this.components);
             this.timer10 = new System.Windows.Forms.Timer(this.components);
+            this.timer11 = new System.Windows.Forms.Timer(this.components);
+            this.timer12 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +49,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(801, 451);
+            this.pictureBox1.Size = new System.Drawing.Size(700, 451);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -101,17 +103,26 @@
             this.timer10.Interval = 1000;
             this.timer10.Tick += new System.EventHandler(this.timer10_Tick);
             // 
+            // timer11
+            // 
+            this.timer11.Interval = 1000;
+            this.timer11.Tick += new System.EventHandler(this.timer11_Tick);
+            // 
+            // timer12
+            // 
+            this.timer12.Interval = 1000;
+            this.timer12.Tick += new System.EventHandler(this.timer12_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(699, 450);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -130,6 +141,8 @@
         private System.Windows.Forms.Timer timer8;
         private System.Windows.Forms.Timer timer9;
         private System.Windows.Forms.Timer timer10;
+        private System.Windows.Forms.Timer timer11;
+        private System.Windows.Forms.Timer timer12;
     }
 }
 
